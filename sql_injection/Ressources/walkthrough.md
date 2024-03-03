@@ -18,3 +18,13 @@ Surname : 5ff9d0165b4f92b14994e5c685cdce28
 ```
 
 The decryption of the password is `FortyTwo`, and after lowering all the characters and hashing it with SHA256, we get the following hash: `10a16d834f9b1e4068b25c4c46fe0284e99e44dceaf08098fc83925ba6310ff5`
+
+# Use case
+
+We can use this vulnerability to have all the datas of a Database, or Drop the Database etc...
+
+# Fix
+
+You must use prepared statements to avoid SQL injection, and not use directly the value of the input in the SQL query.
+But now, almost every website uses an ORM, which is a layer between the database and the application, and it automatically uses prepared statements, so it's very rare to see a SQL injection in a modern website.
+ 
