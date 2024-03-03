@@ -7,7 +7,7 @@
 </form>
 ```
 
-On the `/?page=recover` page, we can see that the email is in a hidden input field. So we can change the value of the email and submit the form.
+On the `/?page=recover` page, we can see that the email is in a hidden input field. So we can change the value of the email and submit the form, to get the flag.
 
 # Use case
 
